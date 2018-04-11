@@ -6,7 +6,7 @@
 /*   By: ashih <ashih@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/08 14:05:05 by ashih             #+#    #+#             */
-/*   Updated: 2018/04/11 07:57:03 by ashih            ###   ########.fr       */
+/*   Updated: 2018/04/11 09:49:22 by ashih            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@ double		v_dot(t_vect3 *v1, t_vect3 *v2)
 
 void		v_cross(t_vect3 *v1, t_vect3 *v2, t_vect3 *result)
 {
-	t_vect3 temp;
+	t_vect3 p;
 
-	temp[0] = (*v1)[1] * (*v2)[2] - (*v1)[2] * (*v2)[1];
-	temp[1] = (*v1)[2] * (*v2)[0] - (*v1)[0] * (*v2)[2];
-	temp[2] = (*v1)[0] * (*v2)[1] - (*v1)[1] * (*v2)[0];
-	ft_memcpy(result, &temp, sizeof(t_vect3));
+	p[0] = (*v1)[1] * (*v2)[2] - (*v1)[2] * (*v2)[1];
+	p[1] = (*v1)[2] * (*v2)[0] - (*v1)[0] * (*v2)[2];
+	p[2] = (*v1)[0] * (*v2)[1] - (*v1)[1] * (*v2)[0];
+	ft_memcpy(result, &p, sizeof(t_vect3));
 }
 
 void		v_mult(double scalar, t_vect3 *v, t_vect3 *result)

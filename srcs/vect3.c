@@ -6,7 +6,7 @@
 /*   By: ashih <ashih@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/08 14:05:05 by ashih             #+#    #+#             */
-/*   Updated: 2018/04/11 07:24:09 by ashih            ###   ########.fr       */
+/*   Updated: 2018/04/11 09:47:49 by ashih            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,24 +21,22 @@ void		v_init(t_vect3 *v, double x, double y, double z)
 
 void		v_normalize(t_vect3 *v)
 {
-	double	norm;
-	double	factor;
+	double	p;
 
-	norm = v_dot(v, v);
-	if (norm > 0.0)
+	p = v_dot(v, v);
+	if (p > 0.0)
 	{
-		factor = 1.0 / sqrt(norm);
-		v_mult(factor, v, v);
+		v_mult(1.0 / sqrt(p), v, v);
 	}
 }
 
 double		v_dist(t_vect3 *src, t_vect3 *dst)
 {
-	t_vect3	temp;
+	t_vect3	v;
 	double	p;
 
-	v_subtract(dst, src, &temp);
-	p = v_dot(&temp, &temp);
+	v_subtract(dst, src, &v);
+	p = v_dot(&v, &v);
 	return (sqrt(p));
 }
 
