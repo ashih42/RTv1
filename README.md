@@ -1,5 +1,11 @@
 # RTv1
-A simple [ray-tracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)) engine in C using [minilibx](https://github.com/qst0/ft_libgfx). (42 Silicon Valley)
+An interactive [ray-tracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)) engine in C using [minilibx](https://github.com/qst0/ft_libgfx). (42 Silicon Valley)
+
+<p float="left">
+  <img src="https://github.com/ashih42/RTv1/blob/master/Screenshots/diffuse_vs_specular.png" width="280" />
+  <img src="https://github.com/ashih42/RTv1/blob/master/Screenshots/pdf_reference.png" width="280" />
+  <img src="https://github.com/ashih42/RTv1/blob/master/Screenshots/multi_lights.png" width="280" />
+</p>
 
 ## Prerequisites
 
@@ -41,7 +47,7 @@ make
 * `Left Shift` + `Numpad 2` Increase camera rotation around Z-axis.
 
 ### Light Controls
-A scene may have 1 or more light sources.  A light source may be directional light or point light.
+A scene may have 1 or more light sources.  A light source may be either directional light or point light.
 
 * `Tab` Select next light source.
 * `O` Toggle light on/off.
