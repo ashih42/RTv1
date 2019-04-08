@@ -22,8 +22,8 @@
 ** -----------------------------------------------------------------------------
 ** CAMERA CONTROLS
 ** -----------------------------------------------------------------------------
-** NUMPAD +					Dec FOV (Zoom in)
-** NUMPAD -					Inc FOV (Zoom out)
+** NUMPAD +					Inc FOV (Zoom out)
+** NUMPAD -					Dec FOV (Zoom in)
 **
 ** NUMPAD 7					Move cam position toward -x
 ** NUMPAD 8					Move cam position toward +x
